@@ -11,7 +11,7 @@ namespace Service.Repository
     {
         public async Task<List<VideoFeeds>> GetAllVideos()
         {
-            var obj = await base.GetAsync<List<VideoFeeds>>("TestEF", "Video");
+            var obj = await base.GetAsync<List<VideoFeeds>>("TestEF","Video");
             return obj;
         }
         public async Task<List<VideoFeeds>> CreateVideo(VideoFeeds Video)
