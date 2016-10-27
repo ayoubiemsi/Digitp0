@@ -1,0 +1,17 @@
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\bin\Debug\Service.dll
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\bin\Debug\Service.pdb
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\bin\Debug\Service.pri
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\Service.dll
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\Service.pdb
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\priconfig.xml
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\priconfig.xml.intermediate
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\layout.resfiles
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\layout.resfiles.intermediate
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\resources.resfiles
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\resources.resfiles.intermediate
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\pri.resfiles
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\pri.resfiles.intermediate
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\qualifiers.txt
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\qualifiers.txt.intermediate
+c:\users\hlamzadr\documents\visual studio 2015\Projects\Temp10WithService\Service\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\hlamzadr\Documents\Visual Studio 2015\Projects\Temp10WithService\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache

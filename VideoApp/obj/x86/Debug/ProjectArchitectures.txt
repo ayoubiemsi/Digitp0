@@ -1,0 +1,2 @@
+C:\Users\hlamzadr\Documents\Visual Studio 2015\Projects\Temp10WithService\Service\Service.csproj;neutral
+C:\Users\hlamzadr\Documents\Visual Studio 2015\Projects\Temp10WithService\VideoApp\VideoApp.csproj;x86
