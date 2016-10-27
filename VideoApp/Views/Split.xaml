@@ -1,0 +1,162 @@
+﻿<Page
+    x:Class="RelativePanel.Split"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RelativePanel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="705.8">
+
+    <Page.Resources>
+        <!--From MSDN : Default style for Windows.UI.Xaml.Controls.TextBox -->
+        <Style x:Key="MsdnTextboxStyle" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                         <ContentControl x:Name="PlaceholderTextContentPresenter"                 
+                              Content="{TemplateBinding PlaceholderText}" 
+                              Foreground="White"
+                             />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    
+    <Grid Width="700" Background="AntiqueWhite">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="220"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="220"/>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="220" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <RelativePanel Background="#286DA9" Grid.ColumnSpan="5" >
+            <!--<Rectangle Fill="Black" Width="50" Height="50" RelativePanel.AlignHorizontalCenterWithPanel="True"/>-->
+            <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"  Width="700">
+                <RelativePanel>
+                    <ComboBox  Background="#286DA9" Name="A" FontSize="34" Margin="60,0,0,0" BorderBrush="#286DA9"   PlaceholderText="Dans tout" >
+                    
+                    </ComboBox>
+
+                    <AutoSuggestBox   PlaceholderText="Rechercher"
+                       Background="Red"
+                       Width="300" 
+                       Height="40"
+                       BorderBrush="Black"
+                       Name="B"  
+                       RelativePanel.RightOf="A"
+                       RelativePanel.AlignVerticalCenterWith="A"         />
+                    
+
+
+                    <!--<TextBlock Foreground="White"  FontFamily="segoe MDL2 Assets" FontSize="40" Text="&#xE11A;" RelativePanel.RightOf="B" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="10,20,0,0" />-->
+                </RelativePanel>
+            </StackPanel>
+            <!---->
+            <!--<TextBlock Text="Vous pouvez rechercher par nom de client .n° de commande . type de chantier ..." FontSize="14" RelativePanel.AlignBottomWith="B" Margin="239,46,-240.4,-46" />-->
+        </RelativePanel>
+
+        <RelativePanel Grid.Row="2" Background="#FF9720" Grid.Column="0">
+            <Image Name="C" Source="Assets\alert.png" Width="60" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                   RelativePanel.AlignVerticalCenterWithPanel="True" Margin="0.2,-6.4,-0.2,6.4"
+                   />
+            <TextBlock   Foreground="White"  Text="Alert" RelativePanel.AlignBottomWith="C" RenderTransformOrigin="4.025,1.8" Margin="100,7.6,-100,-7.6" />
+            <TextBlock   Foreground="White" Text="5" FontSize="80" RelativePanel.LeftOf="C" RelativePanel.AlignVerticalCenterWithPanel="True" />
+            <TextBlock Text="Mes notifications" RelativePanel.AlignBottomWithPanel="True" 
+                       Foreground="White" 
+                       />
+        </RelativePanel>
+        <RelativePanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Background="#FF9720">
+            <ListBox SelectionMode="Single" >
+                <ListBoxItem Background="#FF9720" >
+                    <StackPanel Orientation="Horizontal">
+                        <RelativePanel Width="440">
+                            <TextBlock  Text="Commande text text text text" Margin="0,0,30,0"/>
+                            <StackPanel Orientation="Horizontal" RelativePanel.AlignRightWithPanel="True">
+                                <TextBlock Text="BLOQUE" Margin="-12.4,0,12.4,0" />
+                                <TextBlock Name="G" Text="1J" Margin="-0.4,0,0,0"  />
+                            </StackPanel>
+                        </RelativePanel>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Background="#FF9720">
+                    <StackPanel Orientation="Horizontal">
+                        <RelativePanel Width="440">
+                            <TextBlock  Text="1ère application UWP " Margin="0,0,30,0"/>
+                            <TextBlock Name="H" Text="1J" RelativePanel.AlignRightWithPanel="True" Margin="-0.4,0,0,0"  />
+                            <TextBlock Text="Attente" RelativePanel.LeftOf="H" Margin="-12.4,0,12.4,0" />
+                        </RelativePanel>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Background="#FF9720">
+                    <StackPanel Orientation="Horizontal">
+                        <RelativePanel Width="440">
+                            <TextBlock  Text="La 1ère application Xaml" Margin="0,0,30,0"/>
+                            <TextBlock Name="I" Text="1J" RelativePanel.AlignRightWithPanel="True" Margin="-0.4,0,0,0"  />
+                            <TextBlock Text="BLOQUE" RelativePanel.LeftOf="I" Margin="-12.4,0,12.4,0" />
+                        </RelativePanel>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Background="#FF9720">
+                    <StackPanel Orientation="Horizontal">
+                        <RelativePanel Width="440">
+                            <TextBlock  Text="Commande pour le client amine Ayoubi" Margin="0,0,30,0"/>
+                            <StackPanel Orientation="Horizontal" RelativePanel.AlignRightWithPanel="True">
+                                <TextBlock Text="Encours" RelativePanel.LeftOf="J" Margin="-12.4,0,12.4,0" />
+                                <TextBlock Name="J" Text="" RelativePanel.AlignRightWithPanel="True" Margin="-0.4,0,0,0"  />
+                            </StackPanel>
+                         </RelativePanel>
+                    </StackPanel>
+                </ListBoxItem>
+                <!--<ListBoxItem Background="#FF9720">
+                    <StackPanel Orientation="Horizontal">
+                        <RelativePanel Width="440">
+                            <TextBlock  Text="Commande text text text text" Margin="0,0,30,0"/>
+                            <TextBlock Name="K" Text="1J" RelativePanel.AlignRightWithPanel="True" Margin="-0.4,0,0,0"  />
+                            <TextBlock Text="BLOQUE" RelativePanel.LeftOf="K" Margin="-12.4,0,12.4,0" />
+                        </RelativePanel>
+                    </StackPanel>
+                </ListBoxItem>-->
+            </ListBox>
+        </RelativePanel>
+
+        <RelativePanel Grid.Row="4" Background="#C3FC5F" >
+            <Image Name="D" Source="Assets\alert.png" Width="60" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                   RelativePanel.AlignVerticalCenterWithPanel="True" Margin="28.2,-6.4,-28.2,6.4"
+                   />
+            <TextBlock   Foreground="White" Text="12" FontSize="80" RelativePanel.LeftOf="D" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="28,-15.4,-28.2,15.6" />
+            <TextBlock Text="Mes chantiers" RelativePanel.AlignBottomWithPanel="True" 
+                       Foreground="White" 
+                       />
+        </RelativePanel>
+        <RelativePanel Grid.Row="4" Grid.Column="2" Background="#FCD55F" >
+            <Image Name="E" Source="Assets\alert.png" Width="60" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                   RelativePanel.AlignVerticalCenterWithPanel="True" Margin="36.2,-6.4,-36.2,6.4"
+                   />
+            <TextBlock   Foreground="White" Text="21" FontSize="80" RelativePanel.LeftOf="E" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="44,-17.4,-44.2,17.6" />
+            <TextBlock Text="Mes clients" RelativePanel.AlignBottomWithPanel="True" 
+                       Foreground="White" 
+                       />
+        </RelativePanel>
+        <RelativePanel Grid.Row="4" Grid.Column="4" Background="#6FBAFF" >
+            <Image Name="F" Source="Assets\alert.png" Width="60" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                   RelativePanel.AlignVerticalCenterWithPanel="True" Margin="28.2,-6.4,-28.2,6.4"
+                   />
+            <TextBlock   Foreground="White" Text="21" FontSize="80" RelativePanel.LeftOf="F" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="38,-9.4,-38.2,9.6" />
+            <TextBlock Text="Mes chantiers" RelativePanel.AlignBottomWithPanel="True" 
+                       Foreground="White" 
+                       />
+        </RelativePanel>
+    </Grid>
+</Page>
